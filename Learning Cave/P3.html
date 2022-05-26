@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Cave</title>
+    <link rel="stylesheet" href="C1.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+      integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fuggles&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav class="nav">
+        <h1>Learning Cave</h1>
+        <div class="nav-links" id="nav-links">
+          <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="P2.html">About</a></li>
+            <li><a href="P3.html">Course</a></li>
+            <li><a href="P4.html">Blog</a></li>
+            <li><a href="P5.html">Contact</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1 class="change">Our Courses</h1>
+    </section>
+
+    <!-----------Courses----------->
+    <section class="facilities">
+      <h1>Our Courses</h1>
+      <p id="class12">
+        CBSE Only <br /><br />Batches will start from 9th of August<br /><br />Last
+        date to apply is 1st August
+      </p>
+      <div class="row">
+        <div class="course-col">
+          <h3>6th-10th</h3>
+          <p class="papu">
+            We will teach all subjects <br />We will have different batches for
+            different classes<a href="P5.html">Contact us </a>
+          </p>
+        </div>
+
+        <div class="course-col">
+          <h3>Individual Subjects</h3>
+          <p class="papu">
+            You can learn individual subjects <br />
+            6th-10th <br />Maths , Science , English , Social Science , Computer
+            Science , Hindi<br />11th-12th <br />Physics , Chemistry , Maths ,
+            Computer Science(Python) <a href="P5.html">Contact us </a>
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>PCM + Optional</h3>
+          <p class="papu">
+            Physics, Maths and Chemistry will be taught in this class <br />
+            Optional Subjects will also be taught in this class
+            <a href="P5.html">Contact us </a>
+          </p>
+        </div>
+        <div></div>
+      </div>
+    </section>
+
+    <!----------Footer------->
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Learning Cave is an Online platform initiative to promote free, good and
+        fulfilling education in India to compromise the lack in the education
+        systems of today's day and age.
+      </p>
+    </section>
+    <!-----------JavaScript----------->
+    <script>
+      var navLinks = document.getElementById("nav-links");
+      function showMenu() {
+        navLinks.style.right = "0px";
+      }
+      var navLinks = document.getElementById("nav-links");
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
